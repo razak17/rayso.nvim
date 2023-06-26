@@ -77,7 +77,7 @@ M.create_snippet = function(opts)
   require('lib.file').log(url, code, param_util.assignLang(vim.bo.filetype))
 
   ---@type string
-  local quation = nil
+  local quation = "'"
   if vim.fn.has 'macunix'==1 then
     quation = "'"
   elseif vim.fn.has 'win32'==1 then
